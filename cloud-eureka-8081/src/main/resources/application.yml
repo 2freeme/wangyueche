@@ -1,0 +1,14 @@
+eureka:
+  instance:
+    appname: cloud-eureka-8081
+#    自我保护
+    instance-enabled-onit: false
+#    自我保护阈值
+    lease-renewal-interval-in-seconds: 0.85
+  server:
+#  提出服务间隔时间
+    eviction-interval-timer-in-ms: 1000
+    #关闭readonly读注册表
+    use-read-only-response-cache: false
+#    readwritehe 和readonly同步时间间隔
+    response-cache-update-interval-ms: 1000
